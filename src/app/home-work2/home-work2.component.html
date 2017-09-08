@@ -1,0 +1,6 @@
+<p>
+	Hola
+ <input type="text" class="form-control" [(ngModel)]="username" (input)="onCheckButton()">
+ {{username}}
+ <button class="btn btn-primary" [disabled]="permit" (click)="onReset()" >Reset</button>
+</p>

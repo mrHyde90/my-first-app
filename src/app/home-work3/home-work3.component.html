@@ -1,0 +1,11 @@
+<h2>Homework about directives</h2>
+<button class="btn btn-primary" (click)="onDisplayButton()" >Display details</button>
+
+<p *ngIf="displayButton">Secretword</p>
+<br>
+<br>
+<p *ngFor="let contador of countArrays; let i = index" 
+[ngClass]="{contador: countClicks >= 4}"  
+[ngStyle]="{backgroundColor: onDisplayColor()}">
+{{contador}}
+</p>
